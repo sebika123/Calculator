@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link  href="web.css" rel="stylesheet" >
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="input"  >
+        </div>
+        <div class="buttons">
+            <button class="operator" onClick="operatorchange('+')">+</button>
+            <button class="number"    onclick="numberchange(7)">7</button>
+
+
+                   <button class="number" onclick="numberchange(8)">8</button>
+    <button class="number"    onclick="numberchange(9)">9</button>
+            <button class="operator"    onclick="operatorchange('-')">-</button>
+
+            <button class="number" onclick="numberchange(4)">4</button>
+
+            <button class="number" onclick="numberchange(5)">5</button>
+            <button class="number" onclick="numberchange(6)">6</button>
+
+            <button class="operator" onclick="operatorchange('*')">*</button>
+
+            <button class="number" onclick="numberchange(1)">1</button>
+            <button class="number" onclick="numberchange(2)">2</button>
+            <button class="number" onclick="numberchange(3)">3</button>
+
+
+            <button class="operator" onclick="operatorchange('/')">/</button>
+            <button class="number" onclick="numberchange(0)">0</button>
+            <button class="decimal" onclick="decimalchange('.')">.</button>
+            <button class="clear" onclick="cleardisplay()">C</button>
+            <button class="equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
